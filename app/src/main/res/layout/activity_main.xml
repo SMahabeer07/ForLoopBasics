@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Math Stats Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNumbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numbers (e.g. 1, 5, 2, 5, 8)"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Stats"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvMedian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Median: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHighest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvLowest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lowest: "
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</ScrollView>
